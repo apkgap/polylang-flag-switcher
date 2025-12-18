@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="assets/images/flags/th.png" width="40" height="30" alt="Thai Flag">
-  <img src="assets/images/flags/us.png" width="40" height="30" alt="US Flag">
+  <img src="assets/images/flags/th.svg" width="40" height="30" alt="Thai Flag">
+  <img src="assets/images/flags/us.svg" width="40" height="30" alt="US Flag">
   <br><br>
   <h1>🇹🇭 Polylang Flag Switcher 🇺🇸</h1>
   <p><strong>ตัวสลับภาษาสวยๆ สำหรับ WordPress | A Beautiful Language Switcher for WordPress</strong></p>
@@ -532,7 +532,7 @@ Built with ❤️ using Material Design principles and modern web standards.
 ---
 
 <div align="center">
-  <img src="assets/images/flags/globe.png" width="50" height="50" alt="Globe">
+  <img src="assets/images/flags/globe.svg" width="50" height="50" alt="Globe">
   <br>
   <p><em>ทำลายกำแพงภาษา ทีละธงชาติ 🏳️</em></p>
 </div>
