@@ -1,0 +1,533 @@
+/**
+ * Frontend CSS for Polylang Flag Switcher
+ * Material Design Clean Style
+ */
+
+/* Base styles */
+.pfs-flag-switcher,
+.pfs-single-flag,
+.pfs-language-dropdown {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+}
+
+/* Flag switcher container */
+.pfs-flag-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.pfs-layout-horizontal {
+  flex-direction: row;
+}
+
+.pfs-layout-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Language items */
+.pfs-language-item {
+  display: flex;
+  align-items: center;
+}
+
+.pfs-language-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+}
+
+.pfs-language-link:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.pfs-language-link:active {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Flag styles */
+.pfs-flag {
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Size variations */
+.pfs-size-small .pfs-flag {
+  width: 20px;
+  height: 14px;
+}
+
+.pfs-size-small .pfs-language-name {
+  font-size: 12px;
+}
+
+.pfs-size-medium .pfs-flag {
+  width: 24px;
+  height: 16px;
+}
+
+.pfs-size-medium .pfs-language-name {
+  font-size: 14px;
+}
+
+.pfs-size-large .pfs-flag {
+  width: 28px;
+  height: 20px;
+}
+
+.pfs-size-large .pfs-language-name {
+  font-size: 16px;
+}
+
+.pfs-size-extra-large .pfs-flag {
+  width: 32px;
+  height: 24px;
+}
+
+.pfs-size-extra-large .pfs-language-name {
+  font-size: 18px;
+}
+
+/* Language names */
+.pfs-language-name {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Current language styling */
+.pfs-current-language .pfs-language-link {
+  color: #1976d2;
+  cursor: default;
+}
+
+.pfs-current-language .pfs-language-link:hover {
+  background-color: transparent;
+}
+
+/* Hide current language */
+.pfs-hide-current .pfs-current-language {
+  display: none;
+}
+
+/* No flags variation */
+.pfs-no-flags .pfs-flag {
+  display: none;
+}
+
+/* No names variation */
+.pfs-no-names .pfs-language-name {
+  display: none;
+}
+
+/* Single flag */
+.pfs-single-flag {
+  display: inline-flex;
+  align-items: center;
+}
+
+.pfs-single-flag .pfs-flag-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.pfs-single-flag .pfs-flag-link:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.pfs-single-flag.pfs-current-language .pfs-flag-link {
+  color: #1976d2;
+  cursor: default;
+}
+
+/* Language dropdown - Material Design */
+.pfs-language-dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+}
+
+/* Full width dropdown */
+.pfs-language-dropdown.pfs-full-width {
+  width: 100%;
+  display: block;
+}
+
+.pfs-current-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.pfs-current-display:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-color: rgba(0, 0, 0, 0.24);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.pfs-current-display:active {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.pfs-current-name {
+  flex: 1;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.pfs-dropdown-arrow {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0, 0, 0, 0.54);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+}
+
+.pfs-language-dropdown.active .pfs-dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.pfs-language-dropdown.active .pfs-current-display {
+  border-color: #1976d2;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+}
+
+.pfs-dropdown-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px) scale(0.95);
+  transform-origin: top center;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.pfs-language-dropdown.active .pfs-dropdown-options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.pfs-dropdown-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+}
+
+.pfs-dropdown-option:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.pfs-dropdown-option:active {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Current language in dropdown */
+.pfs-dropdown-option.pfs-current-option {
+  color: #1976d2;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+}
+
+.pfs-dropdown-option.pfs-current-option::after {
+  content: '✓';
+  margin-left: auto;
+  font-weight: bold;
+}
+
+/* Scrollbar styling for dropdown */
+.pfs-dropdown-options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.pfs-dropdown-options::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pfs-dropdown-options::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.pfs-dropdown-options::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Transparent Mode - For use in transparent headers */
+.pfs-transparent.pfs-language-dropdown .pfs-current-display {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.pfs-transparent.pfs-language-dropdown .pfs-current-display:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.pfs-transparent.pfs-language-dropdown .pfs-current-name {
+  color: #fff;
+}
+
+.pfs-transparent.pfs-language-dropdown .pfs-dropdown-arrow {
+  border-top-color: rgba(255, 255, 255, 0.8);
+}
+
+.pfs-transparent.pfs-language-dropdown.active .pfs-current-display {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pfs-transparent.pfs-language-dropdown .pfs-dropdown-options {
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.pfs-transparent.pfs-language-dropdown .pfs-dropdown-option {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pfs-transparent.pfs-language-dropdown .pfs-dropdown-option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.pfs-transparent.pfs-language-dropdown .pfs-dropdown-option:active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Transparent mode scrollbar */
+.pfs-transparent.pfs-language-dropdown .pfs-dropdown-options::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.pfs-transparent.pfs-language-dropdown .pfs-dropdown-options::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .pfs-flag-switcher.pfs-layout-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pfs-language-dropdown {
+    width: 100%;
+  }
+
+  .pfs-dropdown-options {
+    left: 0;
+    right: 0;
+  }
+}
+
+/* Accessibility */
+.pfs-language-link:focus,
+.pfs-single-flag .pfs-flag-link:focus,
+.pfs-current-display:focus,
+.pfs-dropdown-option:focus {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+.pfs-focused {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .pfs-language-link,
+  .pfs-single-flag .pfs-flag-link {
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .pfs-language-link:hover,
+  .pfs-single-flag .pfs-flag-link:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .pfs-current-language .pfs-language-link,
+  .pfs-single-flag.pfs-current-language .pfs-flag-link {
+    color: #64b5f6;
+  }
+
+  .pfs-current-display {
+    background-color: #1e1e1e;
+    border-color: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .pfs-current-display:hover {
+    background-color: #2a2a2a;
+    border-color: rgba(255, 255, 255, 0.24);
+  }
+
+  .pfs-current-name {
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .pfs-dropdown-arrow {
+    border-top-color: rgba(255, 255, 255, 0.54);
+  }
+
+  .pfs-dropdown-options {
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  .pfs-dropdown-option {
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .pfs-dropdown-option:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .pfs-language-dropdown.active .pfs-current-display {
+    border-color: #64b5f6;
+  }
+
+  .pfs-dropdown-options::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .pfs-dropdown-options::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Animation effects */
+.pfs-flag-switcher .pfs-language-item {
+  animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+.pfs-flag-switcher .pfs-language-item:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.pfs-flag-switcher .pfs-language-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.pfs-flag-switcher .pfs-language-item:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.pfs-flag-switcher .pfs-language-item:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.pfs-flag-switcher .pfs-language-item:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ripple effect */
+.pfs-language-link,
+.pfs-dropdown-option,
+.pfs-current-display {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Print styles */
+@media print {
+  .pfs-flag-switcher,
+  .pfs-single-flag,
+  .pfs-language-dropdown {
+    display: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .pfs-flag {
+    border: 2px solid currentColor;
+  }
+
+  .pfs-current-display,
+  .pfs-dropdown-options {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

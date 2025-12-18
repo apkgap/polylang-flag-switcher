@@ -1,0 +1,457 @@
+/**
+ * Admin CSS for Polylang Flag Switcher
+ */
+
+/* Plugin page styles */
+.pfs-admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.pfs-admin-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pfs-admin-title h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.pfs-admin-title .pfs-icon {
+    width: 32px;
+    height: 32px;
+    background: url('../images/icon.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.pfs-admin-version {
+    font-size: 12px;
+    color: #666;
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+/* Settings page */
+.pfs-settings-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pfs-settings-section {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.pfs-settings-header {
+    padding: 15px 20px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.pfs-settings-content {
+    padding: 20px;
+}
+
+/* Form styles */
+.pfs-form-group {
+    margin-bottom: 20px;
+}
+
+.pfs-form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.pfs-form-input,
+.pfs-form-select,
+.pfs-form-textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.pfs-form-input:focus,
+.pfs-form-select:focus,
+.pfs-form-textarea:focus {
+    border-color: #0073aa;
+    outline: none;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+.pfs-form-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.pfs-form-description {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Checkbox and radio styles */
+.pfs-form-checkbox-group,
+.pfs-form-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pfs-form-checkbox-label,
+.pfs-form-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.pfs-form-checkbox,
+.pfs-form-radio {
+    margin: 0;
+}
+
+/* Color picker */
+.pfs-color-picker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pfs-color-picker {
+    width: 50px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pfs-color-value {
+    font-family: monospace;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Preview section */
+.pfs-preview-section {
+    background: #f9f9f9;
+    border: 1px dashed #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.pfs-preview-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #23282d;
+}
+
+.pfs-preview-container {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Buttons */
+.pfs-button {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f7f7f7;
+    color: #23282d;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pfs-button:hover {
+    background: #e5e5e5;
+    border-color: #ccc;
+}
+
+.pfs-button-primary {
+    background: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+
+.pfs-button-primary:hover {
+    background: #005a87;
+    border-color: #005a87;
+}
+
+.pfs-button-secondary {
+    background: #fff;
+    color: #0073aa;
+    border-color: #0073aa;
+}
+
+.pfs-button-secondary:hover {
+    background: #0073aa;
+    color: #fff;
+}
+
+/* Notice styles */
+.pfs-notice {
+    padding: 12px 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.pfs-notice-success {
+    background: #edfaef;
+    border-left: 4px solid #46b450;
+    color: #46b450;
+}
+
+.pfs-notice-error {
+    background: #fef7f7;
+    border-left: 4px solid #dc3232;
+    color: #dc3232;
+}
+
+.pfs-notice-warning {
+    background: #fff8e5;
+    border-left: 4px solid #ffb900;
+    color: #ffb900;
+}
+
+.pfs-notice-info {
+    background: #e5f5fa;
+    border-left: 4px solid #00a0d2;
+    color: #00a0d2;
+}
+
+/* Help section */
+.pfs-help-section {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.pfs-help-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #23282d;
+}
+
+.pfs-help-content {
+    line-height: 1.6;
+}
+
+.pfs-help-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #23282d;
+}
+
+.pfs-help-content p {
+    margin-bottom: 10px;
+}
+
+.pfs-help-content code {
+    background: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.pfs-help-content ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.pfs-help-content li {
+    margin-bottom: 5px;
+}
+
+/* Tabs */
+.pfs-tabs {
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.pfs-tab {
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: #666;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.pfs-tab:hover {
+    color: #23282d;
+    background: #f9f9f9;
+}
+
+.pfs-tab.active {
+    color: #0073aa;
+    border-bottom-color: #0073aa;
+}
+
+.pfs-tab-content {
+    display: none;
+}
+
+.pfs-tab-content.active {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pfs-admin-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .pfs-form-input,
+    .pfs-form-select,
+    .pfs-form-textarea {
+        max-width: 100%;
+    }
+    
+    .pfs-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .pfs-tab {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}
+
+/* Loading spinner */
+.pfs-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: pfs-spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes pfs-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Tooltip */
+.pfs-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.pfs-tooltip .pfs-tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.pfs-tooltip:hover .pfs-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pfs-tooltip .pfs-tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Code preview */
+.pfs-code-preview {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.pfs-code-preview code {
+    background: none;
+    padding: 0;
+}
+
+/* Grid layout for options */
+.pfs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.pfs-grid-item {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.pfs-grid-item h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #23282d;
+}
+
+.pfs-grid-item p {
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #666;
+}
